@@ -1,5 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
 
+/// <summary>
+/// Interface for the Web (API) and the Direct API for the 
+/// URL Shortening service. Includes the API specifications 
+/// for the Create, Update and Delete functionality for the 
+/// URL Mapping. For the simplicity we will link the 
+/// Controller directly with the Data layer for this project.
+/// </summary>
 namespace UrlShortener2.Controllers
 {
     [ApiController]

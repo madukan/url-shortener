@@ -3,6 +3,10 @@ using NUnit.Framework;
 
 namespace UrlEntityTests;
 
+/// <summary>
+///  Database related unit tests. Uses a in-memory 
+///  instance for the 
+/// </summary>
 public class UrlEntityTests
 {
     [TestFixture]

@@ -6,6 +6,11 @@ using UrlShortener2.Entities;
 
 #nullable disable
 
+/// <summary>
+/// SQL Migrations related tasks are listed/actioned here.
+/// The initial population and any data models change as 
+/// the project evolve are implemented here.
+/// </summary>
 namespace UrlShortener2.Migrations
 {
     [DbContext(typeof(UrlEntity))]

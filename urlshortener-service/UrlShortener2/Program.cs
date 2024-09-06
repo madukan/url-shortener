@@ -1,15 +1,21 @@
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
+/// <summary>
+/// Main entry point class for the URL shortening 
+/// service. This initiates the WebAPI, and future
+/// the swagger interfaces and related controllers
+/// </summary>
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
+// Swagger related 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Swagger UI is used only during the development 
+// In production for security reasons, this will 
+// be left switched off.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

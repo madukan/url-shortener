@@ -3,7 +3,12 @@ using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
 
-
+/// <summary>
+/// Data access layer is defined in this class.
+/// At present the aim is to use SQLite for the 
+/// POC. When it is complete this needs to change 
+/// to the appropriate SQL Server connections
+/// </summary>
 namespace UrlShortener2.Entities
 
 {
